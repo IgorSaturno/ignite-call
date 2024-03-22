@@ -5,9 +5,7 @@ import { AuthError, ConnectBox, ConnectItem } from './styles'
 import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 
-export default function Register() {
-  //   async function handleRegister(data: RegisterFormData) {}
-
+export default function ConnectCalendar() {
   const session = useSession()
   const router = useRouter()
 
