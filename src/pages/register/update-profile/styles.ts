@@ -9,7 +9,7 @@ export const ProfileBox = styled(Box, {
   label: {
     display: 'flex',
     flexDirection: 'column',
-    ga: '$2',
+    gap: '$2',
   },
 })
 
