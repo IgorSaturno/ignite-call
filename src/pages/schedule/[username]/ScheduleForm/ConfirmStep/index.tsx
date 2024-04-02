@@ -1,7 +1,7 @@
 import { Button, Text, TextArea, TextInput } from '@ignite-ui/react'
 import { ConfirmForm, FormActions, FormError, FormHeader } from './styles'
 import { CalendarBlank, Clock } from 'phosphor-react'
-import { TypeOf, z } from 'zod'
+import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import dayjs from 'dayjs'
