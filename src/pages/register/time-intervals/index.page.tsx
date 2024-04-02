@@ -100,7 +100,7 @@ export default function TimeIntervals() {
 
   const intervals = watch('intervals')
 
-  async function handleSetTimeIntervals(data) {
+  async function handleSetTimeIntervals(data: unknown) {
     const { intervals } = data as TimeIntervalsFormOutput
 
     try {
@@ -110,7 +110,7 @@ export default function TimeIntervals() {
 
       await router.push('/register/update-profile')
     } catch (error) {
-      console.error(e)
+      console.error(error)
     }
   }
 
@@ -152,6 +152,9 @@ export default function TimeIntervals() {
                   </IntervalDay>
                   <IntervalInputs>
                     <TextInput
+                      crossOrigin={undefined}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
                       size="sm"
                       type="time"
                       step={60}
@@ -159,6 +162,9 @@ export default function TimeIntervals() {
                       {...register(`intervals.${index}.startTime`)}
                     />
                     <TextInput
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                      crossOrigin={undefined}
                       size="sm"
                       type="time"
                       step={60}
